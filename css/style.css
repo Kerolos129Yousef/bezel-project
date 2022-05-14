@@ -1,0 +1,477 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header{
+   
+    display: flex;
+    justify-content:center;
+    text-align:center;
+    background-attachment: fixed;
+    position: relative;
+    
+}
+.nav-link {
+    color:white;
+    
+    font-weight: 500;
+}
+nav{
+    border-bottom: 1px rgba(255, 255, 255, 0.138) solid;
+    border-top: 1px rgba(255, 255, 255, 0.148) solid;
+    display: flex;
+    justify-content:center;
+    text-align:center;
+    position: relative;
+    align-items:center;
+   
+}
+
+
+.social-items{
+    list-style-type:none;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    /* background-color:blue; */
+    
+}
+.line{
+position: relative;
+}
+.line::after{
+    content:"";
+    position:absolute;
+    background-color: rgba(255, 255, 255, 0.148);
+    width:2px;
+    height:85px;
+    top:5;
+    right:-20px ;
+
+
+}
+.social-items li{
+    margin-left:25px;
+}
+.social-items  .fa-brands{
+    color:white;
+   
+}
+.btns{
+    border: 1px solid white;
+}
+
+.carousel-item{
+    height: 100vh;
+    
+    
+   background-position: center;
+   background-repeat: no-repeat;
+   background-attachment: scroll;
+    
+    
+    vertical-align: middle;
+    width: 100%;
+    position: relative;
+    
+    text-align: center;
+}
+
+.carousel-item::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.5;
+
+}
+.carousel-caption{
+    font-family: 'Poppins', sans-serif;
+    transform: translateY(-35vh);
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.carousel-caption h5{
+    font-size:100px;
+    font-weight: 700;
+}
+.carousel-caption p{
+    font-size:1.2rem;
+}
+.slider-btns .btn{
+margin-top: 1.4rem;
+font-family: 'Poppins', sans-serif;
+font-size: 14px;
+font-weight: 600;
+
+
+}
+.slider-btns .btn-1{
+    color:white;
+    background-color:#00c3da;
+    padding:14px 25px;
+    margin-right: 10px;
+}
+.slider-btns .btn-2{
+    color:white;
+    background-color:transparent;
+    border:1px solid white;
+    padding:14px 25px;
+    transition: all 0.3s;
+}
+.slider-btns .btn-2:hover{
+    color:#000;
+    background-color:white;
+
+}
+/* ---------------------end-home---------------------- */
+.about{
+    margin-top: 3rem;
+    font-family: 'Poppins', sans-serif;
+
+}
+.about h6{
+font-weight: bold;
+}
+.about .title{
+font-weight: bold;
+font-size:14px;
+color:black;
+}
+.about .contant{
+    width:60%;
+    margin:  0 auto;
+}
+.about p{
+    font-size: 1.3rem;
+    color: #787878;
+    font-weight: 200;
+    /* background-color: red; */
+    
+}
+
+ hr{
+  background-color:rgb(175, 161, 161);; 
+
+}
+.about button{
+    padding: 15px 30px;
+    font-size: 0.75rem;
+    border: 1px rgba(0, 0, 0, 0.284) solid;
+    background-color :white;
+    transition:background-color 0.5s;
+}
+.about button:hover{
+    background-color:black;
+    color:white;
+}
+/* ---------------------end-about--------------- */
+.vh-70{
+    height: 70vh;
+}
+.w-90{
+    width: 90%;
+}
+.Team .title{
+    /* background-color:blue; */
+    padding-top: 50px;
+    position: relative;
+   
+}
+.Team .title::before{
+    content: "C";
+    font-size:70px;
+    position: absolute;
+    color:rgba(210, 205, 205, 0.895);;
+    top:7%;
+    right:48%;
+    z-index: -1;
+
+}
+.Fs-1{
+    font-size: 3rem;
+}
+.team-member{
+    position: relative;
+   
+}
+.shadow{
+background-color:rgba(0, 195, 218, 0.9);
+width: 100%;
+height: 100%;
+position: absolute;
+opacity:0;
+top: 40px;
+transition:transform 0.5s,opacity 0.75s ;
+}
+.team-member:hover .shadow{
+    opacity:1;
+    transform:translateY(-40px);
+    
+}
+.team-social{
+    list-style-type: none;
+    height:10%;
+    
+}
+.team-social li{
+    padding:0.25rem;
+    
+}
+.team-social li a{
+    color:white;
+}
+.team-info{
+    text-align:center;
+    width:100%;
+    
+}
+/* --------------------end-team----------- */
+.services{
+    width:100%;
+    background-color:#636363;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.fs-7{
+    font-size: 0.90rem;
+}
+
+
+  .list{
+      color: white;
+      list-style-type: none;
+      line-height: 2.5;
+      
+      margin-bottom: 25px;
+      /* background-color:red; */
+      margin-left: 20%;
+      
+  }
+
+.contant{
+    margin-right: 10%;
+}
+@media screen and (min-width: 500px) and (max-width:1020px){
+    .header-socials{
+        display:none;
+        
+    }
+    
+}
+@media screen and (min-width: 500px) and (max-width:1350px){
+    .carousel-item{
+        height: 100%;}
+}
+@media screen and (max-width: 600px) {
+    .txt-sm-center {
+      text-align: center;
+    }
+    .list{
+        margin-left: 0%;
+        padding:0;
+    }
+    .about .contant{
+        width:100%;
+        margin:  0 auto;
+    }
+   
+  }
+  /* ----------------------------end-services--------------- */
+  .prices{
+      /* height:100vh; */
+      background-color: #f7f7f7;
+      padding-bottom: 25px;
+  }
+  .prices .title{
+      position: relative;
+      /* background-color: blue; */
+        padding-top:50px;
+  }
+  .prices .title::before{
+    content: "C";
+    font-size:70px;
+    position: absolute;
+    color:rgba(68, 66, 66, 0.356);;
+    top:7%;
+    right:48%;
+    z-index:-0 ;
+
+}
+  .price-table{
+      background-color:#fff;
+      border-radius: 5px;
+      
+  }
+  .table-head{
+      padding-top: 25px;
+      /* background-color:red */
+  }
+  .price span{
+    font-size:20px;
+  }
+  
+  .price h2{
+      font-size:60px;
+      border-bottom: 1px solid rgba(210, 205, 205, 0.672);
+  }
+  .prices .info ul{
+    line-height: 3rem;
+    list-style-type:none;
+    
+  }
+  .table-footer{
+      padding-bottom: 50px;
+  }
+  .table-footer button{
+      padding: 10px 15px;
+      background-color:  #00c3da;
+      color: #fff;
+      box-shadow: 0 4px 16px rgb(0 0 0 / 7%);  
+      border: none;
+      border-radius: 5px;
+      
+  }
+  .active2 {
+transform: scale(1.07);    
+
+      
+  }
+  .active2 .price{
+    color:#00c3da
+  }
+  .active2 .table-head span{
+      display:inline-flex;
+      justify-content: center;
+      align-items: center;
+      color:white;
+      border-radius: 20px;
+      font-size: 10px;
+      padding:10px;
+      background-color:#00c3da;
+  }
+  /* ---------------------------------------end-prices----------------- */
+  .client{
+    /* height:100vh; */
+    background-color: #f7f7f7;
+    
+}
+
+.w-40{
+    width: 50%;
+    
+}
+.w-10{
+    width:20%;
+}
+  .carousel-item2{
+      width: 100% !important;
+      height:100% !important;
+      background-color:white !important;
+      border-radius: 10px;
+      position:relative;
+      padding-top: 50px;
+  }
+  /* .clinet-item img{
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    right:45%;
+    left:45%;
+    top:-45%;
+    z-index: 2000;
+    
+  } */
+  .btn-circle{
+      
+      
+  }
+  .carousel-item2::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background:none;
+    opacity: 0.5;
+
+}
+.client .carousel-indicators button{
+    background-color:gray;
+    width:10px;
+    height: 10px;
+    border-radius: 50%;
+} 
+.client .carousel-indicators .active{
+    background-color:#00c3da;
+    
+} 
+
+  /* ------------------------------end clinet---------------------------------- */
+  .contact .title{
+    margin-top: 25px;
+  }
+  .form-group{
+      margin-top: 25px;
+      margin-bottom: 30px;
+
+  }
+  .contact .title h2{
+      
+  }
+  .form-group label{
+      font-weight: 500;
+        font-size: 14px;
+        padding-bottom: 5px;
+        border-radius: 0px !important;
+  }
+  .form-group input{
+      width: 60%;
+      height:50px ;
+      display:block;
+      border-color: none;
+  }
+  .form-group textarea{
+    width: 60%;
+    height:100px ;
+    display:block;
+    resize: none;
+}
+.pb-40{
+    padding-bottom: 50px;
+}
+.form-group .btn{
+    padding:15px 25px;
+    font-weight: 500 ;
+    
+}
+.btn-color{
+    background-color:#00c3da;
+    color:white;
+}
+.map{
+    min-height:500px ;
+}
+@media screen and (min-width: 500px) and (max-width:750px){
+    .form-group input{
+        width: 80%;
+       
+    }
+    .form-group textarea{
+      width: 80%;
+      
+  }
+  .form1{
+      margin: 0px;
+      padding:0px;
+  }
+  .map{
+      margin-right: 0px !important;
+  }
+}
